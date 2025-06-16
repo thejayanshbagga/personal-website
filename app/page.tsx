@@ -1,7 +1,7 @@
 // Home.jsx or index.js
 
 import Link from 'next/link';
-import { GitHub, FileText, ArrowRight } from 'lucide-react';
+import { FileText, ArrowRight } from "lucide-react";
 import { Button } from '@/components/ui/button';
 import {
   Card,
