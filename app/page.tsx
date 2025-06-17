@@ -12,7 +12,6 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import SpotifyNowPlaying from '@/components/spotify-now-playing';
 import ExperienceSection from '@/components/ui/ExperienceSection';
 import ExperienceTimeline from '@/components/ui/ExperienceTimeline';
 
@@ -94,10 +93,6 @@ const booksItems = [
                     <span>Balancing academics, freelancing, and the startup grind.</span>
                   </li>
                 </ul>
-              </div>
-              <div className="mt-12">
-                <h3 className="text-xl font-bold mb-4">Currently Listening To</h3>
-                <SpotifyNowPlaying />
               </div>
             </div>
           </div>
