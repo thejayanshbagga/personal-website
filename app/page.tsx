@@ -205,7 +205,7 @@ const booksItems = [
                 <h3 className="text-xl font-bold mb-4">Education</h3>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium">B.Sc in Computer Science (Minor in Spanish)</h4>
+                    <h4 className="font-medium">B.Sc Specialization in Computer Science with Minor in Software Engineering</h4>
                     <p className="text-sm text-muted-foreground">
                       University of Western Ontario • 2023 - 2027
                     </p>
