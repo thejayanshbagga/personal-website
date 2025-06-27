@@ -45,7 +45,7 @@ const booksItems = [
               <span className="block mt-2">Computer Science Student turned FinTech Founder.</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mb-8">
-             I study Computer Science at Western University & prefer building products over doing research like Co-Founding Savify, an AI-driven savings app. I also believe that computer science students can take a cue from the finance world, sharp code deserves a sharp suit.
+             I study Computer Science at Western, blending research with real-world hustle, like co-founding Savify, an AI-driven savings app. I also believe that computer science students can take a cue from the finance world, sharp code deserves a sharp suit.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="#projects">
@@ -70,7 +70,7 @@ const booksItems = [
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
               <p className="text-lg text-muted-foreground">
-               I’m a Computer Science major at Western University with a passion for using AI, NLP, and cloud technologies to solve practical problems. I enjoy building robust backend systems, training machine learning models, and deploying applications with tools like Python, Java, SQL, and AWS. 
+               I’m specializing in Computer Science with a minor in Software Engineering at Western University, driven by a passion for leveraging AI, NLP, and cloud technologies to solve real-world problems. I enjoy building scalable backend systems, training machine learning models, and deploying full-stack applications using Python, Java, SQL, and AWS.
               </p>
               <p className="text-lg text-muted-foreground">
                 When I’m not coding, I’m usually expanding my vocabulary, picking up new languages, sampling colognes and cognac, or just touching grass to balance it all out.
