@@ -34,6 +34,14 @@ const booksItems = [
   "Increased social engagement by 20% and generated over 15,000 combined views across YouTube and Instagram."
 ];
 
+const tsiItems = [
+  "Selected for TSI’s Plan International developer team to modernize a global financial reporting system supporting €1 billion+ in annual program spending across 80+ countries.",
+  "Led reverse engineering of legacy Visual Basic and Excel code, implementing Python, Pandas, SQL Server, and FastAPI pipelines projected to cut month-end close times by up to 40% and support 2,000+ stakeholders.",
+  "Refactored workflows and replaced hardcoded logic, delivering a 3x boost in reporting scalability and error reduction."
+];
+
+
+
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
@@ -192,7 +200,7 @@ const booksItems = [
         <section id="resume" className="py-16 border-t">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
             <h2 className="text-3xl font-bold tracking-tight">Resume</h2>
-            <Link href="/resume.pdf" target="_blank">
+            <Link href="/resume_baggajayansh.pdf" target="_blank">
               <Button>
                 <FileText className="mr-2 h-4 w-4" />
                 Download Resume
@@ -233,6 +241,13 @@ const booksItems = [
               <div className="mt-8">
                 <ExperienceTimeline
                   items={[
+                    {
+                      company: 'Tech For Social Impact',
+                      role: 'Developer',
+                      period: 'October 2025 - May 2026',
+                      logo: '/logos/tsi.jpg',
+                      skills: ['Python', 'SQL', 'NLP','Big Data', 'FastAPI', 'Pandas']
+                    },
                     {
                       company: 'Outlier AI',
                       role: 'Prompt Engineer',
@@ -277,6 +292,11 @@ const booksItems = [
                     title="Social Media Intern"
                     subtitle="Books En Beyond • April - June 2022"
                     items={booksItems}
+                  />
+                  <ExperienceSection
+                  title="Developer"
+                  subtitle="Tech For Social Impact / Plan International • Oct 2025 - Present"
+                  items={tsiItems}
                   />
                 </div>
               </div>
