@@ -34,13 +34,12 @@ const booksItems = [
   "Increased social engagement by 20% and generated over 15,000 combined views across YouTube and Instagram."
 ];
 
-const tsiItems = [
-  "Selected for TSI’s Plan International developer team to modernize a global financial reporting system supporting €1 billion+ in annual program spending across 80+ countries.",
-  "Led reverse engineering of legacy Visual Basic and Excel code, implementing Python, Pandas, SQL Server, and FastAPI pipelines projected to cut month-end close times by up to 40% and support 2,000+ stakeholders.",
-  "Refactored workflows and replaced hardcoded logic, delivering a 3x boost in reporting scalability and error reduction."
+
+const jdPowerItems = [
+  "Incoming Quality Assurance Intern at J.D. Power, contributing to enterprise-scale testing across internal data platforms and client-facing analytics tools used by hundreds of global clients.",
+  "Assisting in test planning, execution, and defect tracking for AI-enabled and data-driven applications to ensure product reliability and accuracy.",
+  "Supporting QA automation and release validation pipelines to maintain performance, stability, and seamless integration across systems."
 ];
-
-
 
   return (
     <div className="min-h-screen bg-background">
@@ -78,7 +77,9 @@ const tsiItems = [
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
               <p className="text-lg text-muted-foreground">
-               I’m specializing in Computer Science with a minor in Software Engineering at Western University, driven by a passion for leveraging AI, NLP, and cloud technologies to solve real-world problems. I enjoy building scalable backend systems, training machine learning models, and deploying full-stack applications using Python, Java, SQL, and AWS.
+              I’m a Computer Science major at Western University and Co-Founder & Technical Lead of Savify, a fintech platform helping students save smarter through automation and gamification.
+              Currently an incoming QA Intern at J.D. Power (2026–2027), with interests in applied AI, data-driven systems, and scalable software infrastructure.
+              I’m passionate about building meaningful products that blend intelligent automation, analytics, and great design.
               </p>
               <p className="text-lg text-muted-foreground">
                 When I’m not coding, I’m usually expanding my vocabulary, picking up new languages, sampling colognes and cognac, or just touching grass to balance it all out.
@@ -90,15 +91,15 @@ const tsiItems = [
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Developing The Savify app with my team of five — we’re growing steadily and have 500+ active users so far.</span>
+                    <span>Developing The Savify app with my team of 5 — we’re growing steadily and have 500+ active users so far.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Tinkering with AI/ML projects, dying a little inside with every LeetCode question, and still trying to land an internship.</span>
+                    <span>Building AI/ML projects, making peace with LeetCode, investing, and shaping a personal brand while working toward bigger opportunities..</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Balancing academics, freelancing, and the startup grind.</span>
+                    <span>Balancing academics, internships, and the startup grind.</span>
                   </li>
                 </ul>
               </div>
@@ -107,100 +108,109 @@ const tsiItems = [
         </section>
 
         {/* Projects */}
-        <section id="projects" className="py-16 border-t">
-          <h2 className="text-3xl font-bold tracking-tight mb-8">Projects</h2>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {/* Savify */}
-            <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
-              <CardHeader>
-                <CardTitle>Savify</CardTitle>
-                <CardDescription>AI-powered FinTech App</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Savify is an AI-powered savings and investing platform with built-in gamification. We have 500+ users, an active team, and a live site at savify.ca — with a full mobile app in the works and fundraising in progress to scale the product.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">Java</Badge>
-                  <Badge variant="secondary">Python</Badge>
-                  <Badge variant="secondary">MongoDB</Badge>
-                  <Badge variant="secondary">React.js</Badge>
-                  <Badge variant="secondary">Firebase</Badge>
-                  <Badge variant="secondary">AWS</Badge>
-                  <Badge variant="secondary">Plaid</Badge>
-                </div>
-              </CardContent>
-              <CardFooter className="flex justify-between mt-auto pt-6">
-                <Link href="https://savify.ca" target="_blank">
-                  <Button variant="outline" size="sm">
-                    Live Site
-                  </Button>
-                </Link>
-              </CardFooter>
-            </Card>
+<section id="projects" className="py-16 border-t">
+  <h2 className="text-3xl font-bold tracking-tight mb-8">Projects</h2>
+  <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
-            {/* WDS Hackathon */}
-            <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
-              <CardHeader>
-                <CardTitle>InkLink</CardTitle>
-                <CardDescription>RBC Hackathon Case Competition</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Debugged HTML & UI/UX to boost site functionality; presented business and technical strategy.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">HTML</Badge>
-                  <Badge variant="secondary">UI/UX</Badge>
-                  <Badge variant="secondary">CSS</Badge>
-                  <Badge variant="secondary">TypeScript</Badge>
-                  <Badge variant="secondary">OAuth</Badge>
-                </div>
-              </CardContent>
-              <CardFooter className="flex justify-between mt-auto pt-6">
-                <Link href="https://wds-overhaul-group-hakurei.vercel.app/" target="_blank">
-                  <Button variant="outline" size="sm">
-                    Live Site
-                  </Button>
-                </Link>
-              </CardFooter>
-            </Card>
+    {/* Savify */}
+    <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
+      <CardHeader>
+        <CardTitle>Savify</CardTitle>
+        <CardDescription>AI-powered FinTech App</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p className="text-sm text-muted-foreground">
+          Savify is an AI-powered savings and investing platform with built-in gamification.
+          It has 500+ users, an active team, and a live site at savify.ca — with a full mobile app in the works and
+          fundraising underway to scale the product.
+        </p>
+        <div className="flex flex-wrap gap-2 mt-4">
+          <Badge variant="secondary">React Native</Badge>
+          <Badge variant="secondary">Node.js</Badge>
+          <Badge variant="secondary">Express.js</Badge>
+          <Badge variant="secondary">MongoDB</Badge>
+          <Badge variant="secondary">Google OAuth</Badge>
+          <Badge variant="secondary">JWT</Badge>
+          <Badge variant="secondary">CI/CD</Badge>
+        </div>
+      </CardContent>
+      <CardFooter className="flex justify-between mt-auto pt-6">
+        <Link href="https://savify.ca" target="_blank">
+          <Button variant="outline" size="sm">
+            Live Site
+          </Button>
+        </Link>
+      </CardFooter>
+    </Card>
 
-            {/* EcoVille */}
-            <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
-              <CardHeader>
-                <CardTitle>EcoVille</CardTitle>
-                <CardDescription>SDG 13 Climate App (in collaboration with the University of Sydney)</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Environmental nuisance reporting app with geotagging and neighborhood watch integration.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">JavaScript</Badge>
-                  <Badge variant="secondary">Mobile App</Badge>
-                  <Badge variant="secondary">AR/VR</Badge>
-                  <Badge variant="secondary">Geolocation</Badge>
-                  <Badge variant="secondary">NLP</Badge>
-                  <Badge variant="secondary">Figma</Badge>
-                </div>
-              </CardContent>
-              <CardFooter className="flex justify-between mt-auto pt-6">
-                <Link href="https://www.youtube.com/watch?v=KbLU1I4Y-rY&t=41s" target="_blank">
-                  <Button variant="outline" size="sm">
-                    Demo Video
-                  </Button>
-                </Link>
-              </CardFooter>
-            </Card>
-          </div>
-        </section>
+    {/* Semantic Cache Engine */}
+    <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
+      <CardHeader>
+        <CardTitle>Semantic Cache Engine</CardTitle>
+        <CardDescription>
+          Built a FastAPI semantic cache for Boardy ($8M AI startup) using vector embeddings and cosine similarity,
+          reducing LLM calls by 60% and latency by 40%.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p className="text-sm text-muted-foreground">
+          A reusable infrastructure engine that optimizes LLM response retrieval using semantic similarity.
+          Features pluggable backends, caching thresholds, and dynamic invalidation logic.
+        </p>
+        <div className="flex flex-wrap gap-2 mt-4">
+          <Badge variant="secondary">FastAPI</Badge>
+          <Badge variant="secondary">Python</Badge>
+          <Badge variant="secondary">Vector Embeddings</Badge>
+          <Badge variant="secondary">Cosine Similarity</Badge>
+          <Badge variant="secondary">LLMs</Badge>
+          <Badge variant="secondary">Docker</Badge>
+          <Badge variant="secondary">API Design</Badge>
+        </div>
+      </CardContent>
+      <CardFooter className="flex justify-between mt-auto pt-6">
+        <Link href="https://github.com/thejayanshbagga/semantic-cache-engine" target="_blank">
+          <Button variant="outline" size="sm">
+            Project Link
+          </Button>
+        </Link>
+      </CardFooter>
+    </Card>
+
+    {/* InkLink - RBC Hackathon */}
+    <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
+      <CardHeader>
+        <CardTitle>InkLink</CardTitle>
+        <CardDescription>RBC Hackathon Case Competition</CardDescription>
+      </CardHeader>
+      <CardContent>
+        <p className="text-sm text-muted-foreground">
+          Debugged and improved UI/UX for the hackathon case app; presented integrated business and technical solutions to RBC executives.
+        </p>
+        <div className="flex flex-wrap gap-2 mt-4">
+          <Badge variant="secondary">HTML</Badge>
+          <Badge variant="secondary">CSS</Badge>
+          <Badge variant="secondary">TypeScript</Badge>
+          <Badge variant="secondary">UI/UX</Badge>
+          <Badge variant="secondary">OAuth</Badge>
+        </div>
+      </CardContent>
+      <CardFooter className="flex justify-between mt-auto pt-6">
+        <Link href="https://wds-overhaul-group-hakurei.vercel.app/" target="_blank">
+          <Button variant="outline" size="sm">
+            Live Site
+          </Button>
+        </Link>
+      </CardFooter>
+    </Card>
+
+  </div>
+</section>
 
         {/* Resume */}
         <section id="resume" className="py-16 border-t">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
             <h2 className="text-3xl font-bold tracking-tight">Resume</h2>
-            <Link href="/resume_baggajayansh.pdf" target="_blank">
+            <Link href="/jayanshbagga_resume.pdf" target="_blank">
               <Button>
                 <FileText className="mr-2 h-4 w-4" />
                 Download Resume
@@ -213,9 +223,9 @@ const tsiItems = [
                 <h3 className="text-xl font-bold mb-4">Education</h3>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-medium">B.Sc Specialization in Computer Science with Minor in Software Engineering</h4>
+                    <h4 className="font-medium">B.Sc – Major in Computer Science</h4>
                     <p className="text-sm text-muted-foreground">
-                      University of Western Ontario • 2023 - 2027
+                      Western International Scholarship ($25,000), RBC Overhaul Case Competition (Top 5)
                     </p>
                   </div>
                 </div>
@@ -228,13 +238,18 @@ const tsiItems = [
                   <Badge>SQL</Badge>
                   <Badge>JavaScript</Badge>
                   <Badge>React</Badge>
-                  <Badge>Next.js</Badge>
+                  <Badge>FastAPI</Badge>
                   <Badge>Node.js</Badge>
+                  <Badge>React Native</Badge>
+                  <Badge>MongoDB</Badge>
+                  <Badge>SQL</Badge>
+                  <Badge>Docker</Badge>
+                  <Badge>LLMs</Badge>
                   <Badge>Prompt Engineering</Badge>
-                  <Badge>NLP</Badge>
                   <Badge>Machine Learning</Badge>
                   <Badge>Data Analysis</Badge>
                   <Badge>API Development</Badge>
+                  <Badge>Quality Assurance</Badge>
                 </div>
               </div>
 
@@ -242,11 +257,11 @@ const tsiItems = [
                 <ExperienceTimeline
                   items={[
                     {
-                      company: 'Tech For Social Impact',
-                      role: 'Developer',
-                      period: 'October 2025 - May 2026',
-                      logo: '/logos/tsi.jpg',
-                      skills: ['Python', 'SQL', 'NLP','Big Data', 'FastAPI', 'Pandas']
+                      company: 'J.D. Power',
+                      role: 'Quality Assurance Engineer',
+                      period: 'May 2026 - August 2027',
+                      logo: '/logos/jdpower.png',
+                      skills: ['Test Automation','Software Testing', 'AI Applications','Postman', 'QA Processes', 'Enterprise Systems']
                     },
                     {
                       company: 'Outlier AI',
@@ -279,8 +294,13 @@ const tsiItems = [
               <div className="space-y-6">
                 <div className="space-y-12">
                   <ExperienceSection
+                    title="Quality Assurance Engineer"
+                    subtitle="JD Power • May 2026 - August 2027"
+                    items={jdPowerItems}
+                  />
+                  <ExperienceSection
                     title="Prompt Engineer"
-                    subtitle="Outlier AI • Sept 2024 - Present"
+                    subtitle="Outlier AI • Sept 2024 - May 2025"
                     items={outlierItems}
                   />
                   <ExperienceSection
@@ -292,11 +312,6 @@ const tsiItems = [
                     title="Social Media Intern"
                     subtitle="Books En Beyond • April - June 2022"
                     items={booksItems}
-                  />
-                  <ExperienceSection
-                  title="Developer"
-                  subtitle="Tech For Social Impact / Plan International • Oct 2025 - Present"
-                  items={tsiItems}
                   />
                 </div>
               </div>
