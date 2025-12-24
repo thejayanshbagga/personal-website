@@ -74,7 +74,7 @@ export default function Home() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
               <p className="text-lg text-muted-foreground">
-                I’m a Computer Science major at Western University and the Co-Founder & Technical Lead of Savify, a fintech platform helping students save smarter through automation and gamification. I’ll be joining J.D. Power (2026–2027) as a QA Intern, where I’ll focus on testing and improving data-driven and AI-enabled systems. My interests lie at the intersection of software infrastructure, intelligent automation, and finance—building systems that are efficient, scalable, and actually useful.
+                I’m a Computer Science major at Western University and the Co-Founder & Technical Lead of Savify. Incoming Quality Assurance Engineer at J.D. Power, building reliable, data-driven systems that connect software, intelligence, and finance—projects that don’t just work, but work with purpose.
               </p>
               <p className="text-lg text-muted-foreground">
                 When I’m not coding, I’m usually expanding my vocabulary, picking up new languages, sampling colognes and cognac, or just touching grass to balance it all out.
@@ -90,7 +90,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Building intelligent systems, grinding LeetCode, and running Savify.</span>
+                    <span>Designing systems that learn, solving problems that hurt, and building toward what’s next.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
@@ -136,31 +136,34 @@ export default function Home() {
             </Card>
 
             {/* Semantic Cache Engine */}
-            <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
-              <CardHeader>
-                <CardTitle>Semantic Cache Engine</CardTitle>
-                <CardDescription>
-                  Built a FastAPI semantic cache for Boardy ($8M AI startup) using vector embeddings and cosine similarity to reduce LLM calls by 60% and latency by 40%. Designed as a modular caching engine for AI applications.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">FastAPI</Badge>
-                  <Badge variant="secondary">Python</Badge>
-                  <Badge variant="secondary">Vector Embeddings</Badge>
-                  <Badge variant="secondary">Cosine Similarity</Badge>
-                  <Badge variant="secondary">LLMs</Badge>
-                  <Badge variant="secondary">Docker</Badge>
-                  <Badge variant="secondary">API Design</Badge>
-                </div>
-              </CardContent>
-              <CardFooter className="flex justify-between mt-auto pt-6">
-                <Link href="https://github.com/thejayanshbagga/semantic-cache-engine" target="_blank">
-                  <Button variant="outline" size="sm">Project Link</Button>
-                </Link>
-              </CardFooter>
-            </Card>
-
+              <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
+                <CardHeader>
+                  <CardTitle>Semantic Cache Engine</CardTitle>
+                  <CardDescription>AI-Powered Caching Infrastructure</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mt-2">
+                    Built a FastAPI semantic cache for Boardy ($8M AI startup) using vector embeddings and cosine similarity 
+                    to reduce LLM calls by 60% and latency by 40%. Designed as a modular caching engine for AI applications.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Badge variant="secondary">FastAPI</Badge>
+                    <Badge variant="secondary">Python</Badge>
+                    <Badge variant="secondary">Vector Embeddings</Badge>
+                    <Badge variant="secondary">Cosine Similarity</Badge>
+                    <Badge variant="secondary">LLMs</Badge>
+                    <Badge variant="secondary">Docker</Badge>
+                    <Badge variant="secondary">API Design</Badge>
+                  </div>
+                </CardContent>
+                <CardFooter className="flex justify-between mt-auto pt-6">
+                  <Link href="https://github.com/thejayanshbagga/semantic-cache-engine" target="_blank">
+                    <Button variant="outline" size="sm">
+                      Project Link
+                    </Button>
+                  </Link>
+                </CardFooter>
+              </Card>
             {/* InkLink */}
             <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
               <CardHeader>
