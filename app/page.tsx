@@ -77,9 +77,7 @@ const jdPowerItems = [
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
               <p className="text-lg text-muted-foreground">
-              I’m a Computer Science major at Western University and Co-Founder & Technical Lead of Savify, a fintech platform helping students save smarter through automation and gamification.
-              Currently an incoming QA Intern at J.D. Power (2026–2027), with interests in applied AI, data-driven systems, and scalable software infrastructure.
-              I’m passionate about building meaningful products that blend intelligent automation, analytics, and great design.
+               I’m a Computer Science major at Western University and the Co-Founder & Technical Lead of Savify, a fintech platform helping students save smarter through automation and gamification. I’ll be joining J.D. Power (2026–2027) as a QA Intern, where I’ll focus on testing and improving data-driven and AI-enabled systems. My interests lie at the intersection of software infrastructure, intelligent automation, and finance — building systems that are efficient, scalable, and actually useful.
               </p>
               <p className="text-lg text-muted-foreground">
                 When I’m not coding, I’m usually expanding my vocabulary, picking up new languages, sampling colognes and cognac, or just touching grass to balance it all out.
@@ -91,15 +89,15 @@ const jdPowerItems = [
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Developing The Savify app with my team of 5 — we’re growing steadily and have 500+ active users so far.</span>
+                    <span>Scaling The Savify app with a team of five; refining features, optimizing backend performance, and preparing for the next funding phase.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Building AI/ML projects, making peace with LeetCode, investing, and shaping a personal brand while working toward bigger opportunities..</span>
+                    <span>uilding intelligent systems, grinding LeetCode, and running Savify.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Balancing academics, internships, and the startup grind.</span>
+                    <span>Developing my personal brand and investment portfolio while pursuing bigger professional opportunities.</span>
                   </li>
                 </ul>
               </div>
@@ -148,15 +146,10 @@ const jdPowerItems = [
       <CardHeader>
         <CardTitle>Semantic Cache Engine</CardTitle>
         <CardDescription>
-          Built a FastAPI semantic cache for Boardy ($8M AI startup) using vector embeddings and cosine similarity,
-          reducing LLM calls by 60% and latency by 40%.
+          Built a FastAPI semantic cache for Boardy ($8M AI startup) using vector embeddings and cosine similarity to reduce LLM calls by 60% and latency by 40%. Designed as a modular caching engine for AI applications.
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <p className="text-sm text-muted-foreground">
-          A reusable infrastructure engine that optimizes LLM response retrieval using semantic similarity.
-          Features pluggable backends, caching thresholds, and dynamic invalidation logic.
-        </p>
         <div className="flex flex-wrap gap-2 mt-4">
           <Badge variant="secondary">FastAPI</Badge>
           <Badge variant="secondary">Python</Badge>
@@ -224,12 +217,12 @@ const jdPowerItems = [
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-medium">B.Sc – Major in Computer Science</h4>
-                    <p className="text-sm text-muted-foreground">
-                      Western International Scholarship ($25,000), RBC Overhaul Case Competition (Top 5)
-                    </p>
+                    <div className="flex flex-col sm:flex-row gap-2 mt-2">
+                      <Badge variant="secondary">Western International Scholarship ($25,000)</Badge>
+                      <Badge variant="secondary">RBC Overhaul Case Competition (Top 5)</Badge>
+                    </div>
                   </div>
-                </div>
-              </div>
+
 
               <div>
                 <h3 className="text-xl font-bold mb-4">Skills</h3>
