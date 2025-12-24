@@ -221,8 +221,6 @@ const jdPowerItems = [
                       <Badge variant="secondary">Western International Scholarship ($25,000)</Badge>
                       <Badge variant="secondary">RBC Overhaul Case Competition (Top 5)</Badge>
                     </div>
-                  </div>
-
 
               <div>
                 <h3 className="text-xl font-bold mb-4">Skills</h3>
