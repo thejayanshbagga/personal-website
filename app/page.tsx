@@ -86,11 +86,11 @@ export default function Home() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Scaling The Savify app with a team of five; refining features, optimizing backend performance, and preparing for the next funding phase.</span>
+                    <span>Scaling The Savify app with a team of six; refining features, optimizing backend performance, and preparing for the next funding phase.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Designing systems that learn, solving problems that hurt, and building toward what’s next.</span>
+                    <span>Designing systems that learn, solving problems that hurt, and building toward what’s next under Project Kalson.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
@@ -110,13 +110,13 @@ export default function Home() {
             {/* Savify */}
             <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
               <CardHeader>
-                <CardTitle>Savify</CardTitle>
+                <CardTitle>Savify (Privately-Backed)</CardTitle>
                 <CardDescription>AI-powered FinTech App</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
                   Savify is an AI-powered savings and investing platform with built-in gamification.
-                  It has 500+ users, an active team, and a live site at savify.ca — with a full mobile app in the works and fundraising underway to scale the product.
+                  Projected 500+ users, an active team, and a live site at savify.ca — with a full mobile app in the works and fundraising underway to scale the product.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <Badge variant="secondary">React Native</Badge>
@@ -164,31 +164,41 @@ export default function Home() {
                   </Link>
                 </CardFooter>
               </Card>
-            {/* InkLink */}
+            {/* Reflecta */}
             <Card className="overflow-hidden border-2 hover:border-primary/50 transition-colors">
               <CardHeader>
-                <CardTitle>InkLink</CardTitle>
-                <CardDescription>RBC Hackathon Case Competition</CardDescription>
+                <CardTitle>Reflecta</CardTitle>
+                <CardDescription>
+                  AI Reflection Engine • UofTHacks 13 (Top 5)
+                </CardDescription>
               </CardHeader>
+
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Debugged and improved UI/UX for the hackathon case app; presented integrated business and technical solutions to RBC executives.
+                  Reflecta is an AI-powered reflection system built during UofTHacks 13 that helps users analyze personal thoughts and writing using large language models. 
+                  The project explores how AI can transform raw journaling into structured insights and pattern detection for self-awareness.
                 </p>
+
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Badge variant="secondary">HTML</Badge>
-                  <Badge variant="secondary">CSS</Badge>
-                  <Badge variant="secondary">TypeScript</Badge>
-                  <Badge variant="secondary">UI/UX</Badge>
-                  <Badge variant="secondary">OAuth</Badge>
+                  <Badge variant="secondary">Python</Badge>
+                  <Badge variant="secondary">LLMs</Badge>
+                  <Badge variant="secondary">NLP</Badge>
+                  <Badge variant="secondary">Prompt Engineering</Badge>
+                  <Badge variant="secondary">AI Systems</Badge>
                 </div>
               </CardContent>
+
               <CardFooter className="flex justify-between mt-auto pt-6">
-                <Link href="https://wds-overhaul-group-hakurei.vercel.app/" target="_blank">
-                  <Button variant="outline" size="sm">Live Site</Button>
+                <Link 
+                  href="https://devpost.com/software/reflecto?ref_content=my-projects-tab&ref_feature=my_projects" 
+                  target="_blank"
+                >
+                  <Button variant="outline" size="sm">
+                    View Project
+                  </Button>
                 </Link>
               </CardFooter>
             </Card>
-
           </div>
         </section>
 
@@ -246,7 +256,7 @@ export default function Home() {
                     {
                       company: 'J.D. Power',
                       role: 'Quality Assurance Engineer',
-                      period: 'May 2026 - August 2027',
+                      period: 'May 2026 - Present',
                       logo: '/logos/jdpower.png',
                       skills: ['Test Automation','Software Testing', 'AI Applications','Postman', 'QA Processes', 'Enterprise Systems']
                     },
@@ -281,7 +291,7 @@ export default function Home() {
               <div className="space-y-12">
                 <ExperienceSection
                   title="Quality Assurance Engineer"
-                  subtitle="J.D. Power • May 2026 - August 2027"
+                  subtitle="J.D. Power • May 2026 - Present"
                   items={jdPowerItems}
                 />
                 <ExperienceSection
