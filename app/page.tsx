@@ -32,12 +32,6 @@ export default function Home() {
     "Increased social engagement by 20% and generated over 15,000 combined views across YouTube and Instagram."
   ];
 
-  const jdPowerItems = [
-    "Incoming Quality Assurance Intern at J.D. Power, contributing to enterprise-scale testing across internal data platforms and client-facing analytics tools used by hundreds of global clients.",
-    "Assisting in test planning, execution, and defect tracking for AI-enabled and data-driven applications to ensure product reliability and accuracy.",
-    "Supporting QA automation and release validation pipelines to maintain performance, stability, and seamless integration across systems."
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
@@ -74,8 +68,7 @@ export default function Home() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
               <p className="text-lg text-muted-foreground">
-                I’m a Computer Science major at Western University and the Co-Founder & Technical Lead of Savify. Incoming Quality Assurance Engineer at J.D. Power, building reliable, data-driven systems that connect software, intelligence, and finance—projects that don’t just work, but work with purpose.
-              </p>
+                I’m a Computer Science major at Western University and the Co-Founder & Technical Lead of Savify, a privately-backed fintech startup. I’m currently working with Tech for Social Impact (TSI) on modernizing large-scale financial systems, while also building AI-driven projects and exploring new startup ideas under Project Kalson. My interests lie at the intersection of software, intelligence, and finance—creating systems that are scalable, efficient, and actually useful.              </p>
               <p className="text-lg text-muted-foreground">
                 When I’m not coding, I’m usually expanding my vocabulary, picking up new languages, sampling colognes and cognac, or just touching grass to balance it all out.
               </p>
@@ -206,7 +199,7 @@ export default function Home() {
         <section id="resume" className="py-16 border-t">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
             <h2 className="text-3xl font-bold tracking-tight">Resume</h2>
-            <Link href="/jayanshbagga_resume.pdf" target="_blank">
+            <Link href="/resume-jayanshbagga.pdf" target="_blank">
               <Button>
                 <FileText className="mr-2 h-4 w-4" />
                 Download Resume
@@ -254,13 +247,6 @@ export default function Home() {
                 <ExperienceTimeline
                   items={[
                     {
-                      company: 'J.D. Power',
-                      role: 'Quality Assurance Engineer',
-                      period: 'May 2026 - Present',
-                      logo: '/logos/jdpower.png',
-                      skills: ['Test Automation','Software Testing', 'AI Applications','Postman', 'QA Processes', 'Enterprise Systems']
-                    },
-                    {
                       company: 'Outlier AI',
                       role: 'Prompt Engineer',
                       period: 'Sept 2024 - Present',
@@ -289,11 +275,6 @@ export default function Home() {
             <div>
               <h3 className="text-xl font-bold mb-4">Experiences</h3>
               <div className="space-y-12">
-                <ExperienceSection
-                  title="Quality Assurance Engineer"
-                  subtitle="J.D. Power • May 2026 - Present"
-                  items={jdPowerItems}
-                />
                 <ExperienceSection
                   title="Prompt Engineer"
                   subtitle="Outlier AI • Sept 2024 - May 2025"
