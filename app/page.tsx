@@ -219,8 +219,6 @@ export default function Home() {
                     <h4 className="font-medium">B.Sc – Major in Computer Science</h4>
                     <div className="flex flex-col sm:flex-row gap-2 mt-2">
                       <Badge variant="secondary">Western International Scholarship ($25,000)</Badge>
-                      <Badge variant="secondary">University of Toronto Hackathon 13 (Top 5)</Badge>
-                      <Badge variant="secondary">RBC Overhaul Case Competition (Top 5)</Badge>
                     </div>
                   </div>
                 </div>
