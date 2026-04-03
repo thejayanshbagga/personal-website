@@ -15,23 +15,16 @@ import ExperienceTimeline from '@/components/ui/ExperienceTimeline';
 
 export default function Home() {
   const carloItems = [
-    "Completed a 16-week data internship with Carlo Romano, an Italian leather and shoe manufacturer, collaborating closely with the Italy-based team.",
-    "Built Python and SQL pipelines to automate user experience validation and sentiment analysis for Indian online shoppers.",
-    "Developed NLP workflows to uncover key customer trends, delivering insights to marketing and senior management."
+  "Built Python and SQL data pipelines to automate user experience and feedback validation across cross-regional operations.",
+  "Engineered NLP workflows (NLTK, Pandas) to analyze 20,000+ customer records, enabling scalable sentiment analysis.",
+  "Collaborated across India & Italy in agile workflows, participating in standups and sprint planning to deliver data-driven insights."
   ];
 
   const outlierItems = [
-    "Contributed as a Generalist Prompt Engineer at Outlier AI, a California-based AI startup.",
-    "Refined large language model outputs through advanced prompt engineering, boosting accuracy and efficiency.",
-    "Worked remotely on diverse AI projects exploring innovative applications of NLP and generative models."
+  "Engineered and optimized LLM-based systems using OpenAI APIs and Python, improving output accuracy by ~10–15% across production use cases.",
+  "Built evaluation pipelines with Python and Pandas, benchmarking performance across 1K–5K+ model outputs and enabling systematic tuning.",
+  "Scaled NLP workflows on 10K+ text records, supporting enterprise-level AI deployments and supervised learning tasks."
   ];
-
-  const booksItems = [
-    "Interned as a social media and content developer for Books En Beyond, a community-focused non-profit.",
-    "Produced and promoted multimedia campaigns for 'The Kashmir Files', collaborating with Anupam Kher, a leading Bollywood actor.",
-    "Increased social engagement by 20% and generated over 15,000 combined views across YouTube and Instagram."
-  ];
-
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
@@ -40,10 +33,10 @@ export default function Home() {
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
               <span className="block text-primary">Hey, I'm Jayansh Bagga.</span>
-              <span className="block mt-2">Computer Science Student turned FinTech Founder.</span>
+              <span className="block mt-2">Software Engineer • FinTech Founder • AI Builder</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mb-8">
-              I study Computer Science at Western, blending research with real-world hustle, like co-founding Savify, an AI-driven savings app. I also believe that computer science students can take a cue from the finance world—sharp code deserves a sharp suit.
+              I’m a Computer Science major at Western University and the Founder & Technical Lead of Savify, a privately-backed fintech startup. I build scalable systems at the intersection of software, AI, and finance — from LLM infrastructure to production-grade backend systems. I also believe that computer science students can take a cue from the finance world—sharp code deserves a sharp suit.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="#projects">
@@ -68,7 +61,7 @@ export default function Home() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
               <p className="text-lg text-muted-foreground">
-                I’m a Computer Science major at Western University and the Co-Founder & Technical Lead of Savify, a privately-backed fintech startup. I’m currently working with Tech for Social Impact (TSI) on modernizing large-scale financial systems, while also building AI-driven projects and exploring new startup ideas under Project Kalson. My interests lie at the intersection of software, intelligence, and finance—creating systems that are scalable, efficient, and actually useful.              </p>
+                I’m a Computer Science student at Western University, building at the intersection of software, AI, and finance. I’ve been working on real-world systems—from LLM-based infrastructure to scalable backend applications. I’m especially interested in building products that are not just technically strong, but genuinely useful.    </p>
               <p className="text-lg text-muted-foreground">
                 When I’m not coding, I’m usually expanding my vocabulary, picking up new languages, sampling colognes and cognac, or just touching grass to balance it all out.
               </p>
@@ -79,7 +72,11 @@ export default function Home() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Scaling The Savify app with a team of six; refining features, optimizing backend performance, and preparing for the next funding phase.</span>
+                    <span>Moving to Toronto to start my SWE internship at Flynn, working on enterprise systems and scaling real-world applications.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
+                    <span>Scaling The Savify app with a team of five; refining features, optimizing backend performance, and preparing for the next funding phase.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
@@ -108,8 +105,8 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Savify is an AI-powered savings and investing platform with built-in gamification.
-                  Projected 500+ users, an active team, and a live site at savify.ca — with a full mobile app in the works and fundraising underway to scale the product.
+                  Savify is a privately-backed fintech platform focused on goal-based savings, combining machine learning insights, financial analytics, and gamified user engagement.
+                  Currently at 150+ registered users with a live platform and mobile app in development, scaling toward 500+ users post-launch.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <Badge variant="secondary">React Native</Badge>
@@ -227,19 +224,36 @@ export default function Home() {
                 <div className="flex flex-wrap gap-2">
                   <Badge>Python</Badge>
                   <Badge>Java</Badge>
-                  <Badge>C</Badge>
-                  <Badge>FastAPI</Badge>
-                  <Badge>Node.js</Badge>
-                  <Badge>React Native</Badge>
-                  <Badge>MongoDB</Badge>
+                  <Badge>C++</Badge>
                   <Badge>SQL</Badge>
+                  <Badge>TypeScript</Badge>
+
+                  <Badge>Angular</Badge>
+                  <Badge>.NET Core</Badge>
+                  <Badge>Node.js</Badge>
+                  <Badge>FastAPI</Badge>
+                  <Badge>React Native</Badge>
+
+                  <Badge>MongoDB</Badge>
+                  <Badge>PostgreSQL</Badge>
+                  <Badge>Redis</Badge>
+
+                  <Badge>AWS</Badge>
                   <Badge>Docker</Badge>
+                  <Badge>Kubernetes</Badge>
+
+                  <Badge>REST APIs</Badge>
+                  <Badge>System Design</Badge>
+                  <Badge>Multithreading</Badge>
+
                   <Badge>LLMs</Badge>
-                  <Badge>Prompt Engineering</Badge>
-                  <Badge>Machine Learning</Badge>
-                  <Badge>Data Analysis</Badge>
-                  <Badge>API Development</Badge>
-                  <Badge>Quality Assurance</Badge>
+                  <Badge>NLP</Badge>
+                  <Badge>Pandas</Badge>
+                  <Badge>XGBoost</Badge>
+
+                  <Badge>Algorithmic Trading</Badge>
+                  <Badge>Time Series</Badge>
+                  <Badge>Risk Modeling</Badge>
                 </div>
               </div>
 
@@ -247,9 +261,16 @@ export default function Home() {
                 <ExperienceTimeline
                   items={[
                     {
+                      company: 'Flynn Group of Companies',
+                      role: 'Software Engineering Intern',
+                      period: 'May 2026 - Sept 2026',
+                      logo: '/logos/flynn.jpg',
+                      skills: ['Angular', '.NET Core', 'SQL', 'AWS', 'Azure DevOps']
+                    },
+                    {
                       company: 'Outlier AI',
-                      role: 'Prompt Engineer',
-                      period: 'Sept 2024 - Present',
+                      role: 'AI Engineer',
+                      period: 'Sept 2024 - May 2025',
                       logo: '/logos/outlier.jpeg',
                       skills: ['AI', 'Prompt Engineering','LLM', 'Mathematical Reasoning', 'Fine-tuning']
                     },
@@ -259,13 +280,6 @@ export default function Home() {
                       period: 'June 2024 - Sept 2024',
                       logo: '/logos/carloromano.png',
                       skills: ['Python', 'SQL', 'NLP','Big Data', 'Matplotlib', 'Pandas']
-                    },
-                    {
-                      company: 'Books En Beyond',
-                      role: 'Social Media Intern',
-                      period: 'April - June 2022',
-                      logo: '/logos/booksenbeyond.png',
-                      skills: ['Social Media', 'Content Creation', 'SEO Research','Audience Analytics']
                     },
                   ]}
                 />
@@ -284,11 +298,6 @@ export default function Home() {
                   title="Data Analyst Intern"
                   subtitle="Carlo Romano • June 2024 - Sept 2024"
                   items={carloItems}
-                />
-                <ExperienceSection
-                  title="Social Media Intern"
-                  subtitle="Books En Beyond • April - June 2022"
-                  items={booksItems}
                 />
               </div>
             </div>
