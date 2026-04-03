@@ -18,12 +18,19 @@ export default function Home() {
   "Built Python and SQL data pipelines to automate user experience and feedback validation across cross-regional operations.",
   "Engineered NLP workflows (NLTK, Pandas) to analyze 20,000+ customer records, enabling scalable sentiment analysis.",
   "Collaborated across India & Italy in agile workflows, participating in standups and sprint planning to deliver data-driven insights."
+];
+  ];
+
+  const flynnItems = [
+  "Scheduled for a 16-week software engineering internship at Flynn, working on internal enterprise applications using Angular, .NET Core, and SQL.",
+  "Contributing to backend services and API development, focusing on scalable systems and performance.",
+  "Working with AWS and Azure DevOps pipelines to deploy and maintain production applications."
   ];
 
   const outlierItems = [
   "Engineered and optimized LLM-based systems using OpenAI APIs and Python, improving output accuracy by ~10–15% across production use cases.",
-  "Built evaluation pipelines with Python and Pandas, benchmarking performance across 1K–5K+ model outputs and enabling systematic tuning.",
-  "Scaled NLP workflows on 10K+ text records, supporting enterprise-level AI deployments and supervised learning tasks."
+  "Built evaluation pipelines with Python and Pandas, benchmarking performance across 1K–5K+ model outputs.",
+  "Scaled NLP workflows on 10K+ text records, supporting enterprise AI deployments and supervised learning tasks."
   ];
   return (
     <div className="min-h-screen bg-background">
@@ -33,10 +40,10 @@ export default function Home() {
           <div className="max-w-3xl">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">
               <span className="block text-primary">Hey, I'm Jayansh Bagga.</span>
-              <span className="block mt-2">Software Engineer • FinTech Founder • AI Builder</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mb-8">
-              I’m a Computer Science major at Western University and the Founder & Technical Lead of Savify, a privately-backed fintech startup. I build scalable systems at the intersection of software, AI, and finance — from LLM infrastructure to production-grade backend systems. I also believe that computer science students can take a cue from the finance world—sharp code deserves a sharp suit.
+              I’m a Computer Science student at Western and Founder & Technical Lead of Savify, a privately-backed fintech startup. I build scalable systems across software, AI, and finance from LLM infrastructure to backend applications. 
+              I also believe that computer science students can take a cue from the finance world, sharp code deserves a sharp suit.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="#projects">
@@ -213,6 +220,7 @@ export default function Home() {
                     <h4 className="font-medium">B.Sc – Major in Computer Science</h4>
                     <div className="flex flex-col sm:flex-row gap-2 mt-2">
                       <Badge variant="secondary">Western International Scholarship ($25,000)</Badge>
+                      <Badge variant="secondary">University of Toronto Hackathon 13 (Top 5)</Badge>
                       <Badge variant="secondary">RBC Overhaul Case Competition (Top 5)</Badge>
                     </div>
                   </div>
@@ -290,7 +298,12 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Experiences</h3>
               <div className="space-y-12">
                 <ExperienceSection
-                  title="Prompt Engineer"
+                  title="Software Engineering Intern"
+                  subtitle="Flynn Group Of Companies • May 2026 - Sept 2026"
+                  items={flynnItems}
+                />
+                <ExperienceSection
+                  title="AI Engineer"
                   subtitle="Outlier AI • Sept 2024 - May 2025"
                   items={outlierItems}
                 />
