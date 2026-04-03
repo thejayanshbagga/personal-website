@@ -19,7 +19,6 @@ export default function Home() {
   "Engineered NLP workflows (NLTK, Pandas) to analyze 20,000+ customer records, enabling scalable sentiment analysis.",
   "Collaborated across India & Italy in agile workflows, participating in standups and sprint planning to deliver data-driven insights."
 ];
-  ];
 
   const flynnItems = [
   "Scheduled for a 16-week software engineering internship at Flynn, working on internal enterprise applications using Angular, .NET Core, and SQL.",
@@ -299,14 +298,16 @@ export default function Home() {
               <div className="space-y-12">
                 <ExperienceSection
                   title="Software Engineering Intern"
-                  subtitle="Flynn Group Of Companies • May 2026 - Sept 2026"
+                  subtitle="Flynn Group of Companies • May 2026 - Sept 2026"
                   items={flynnItems}
                 />
+
                 <ExperienceSection
-                  title="AI Engineer"
+                  title="AI Engineer (LLM Systems)"
                   subtitle="Outlier AI • Sept 2024 - May 2025"
                   items={outlierItems}
                 />
+
                 <ExperienceSection
                   title="Data Analyst Intern"
                   subtitle="Carlo Romano • June 2024 - Sept 2024"
