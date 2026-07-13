@@ -21,9 +21,9 @@ export default function Home() {
 ];
 
   const flynnItems = [
-  "Scheduled for a 16-week software engineering internship at Flynn, working on internal enterprise applications using Angular, .NET Core, and SQL.",
-  "Contributing to backend services and API development, focusing on scalable systems and performance.",
-  "Working with AWS and Azure DevOps pipelines to deploy and maintain production applications."
+  "Tasked with modernizing a customer-facing platform tracking $100M+ in construction projects, built and shipped 25+ Angular/TypeScript features end-to-end from UI to backend integration, improving workflow efficiency and user experience for daily project-management users.",
+  "To eliminate slow, error-prone manual approvals across enterprise systems, designed and deployed REST API endpoints in .NET Core and SQL that automated multi-stage approval workflows, cutting processing time 30% and removing manual data-entry errors.",
+  "Embedded in a cross-functional Agile team of PMs, engineers, and business stakeholders, drove features through the full SDLC across the project lifecycle, contributing to a platform managing 500+ commercial construction projects across North America."
   ];
 
   const outlierItems = [
@@ -268,7 +268,7 @@ export default function Home() {
                     {
                       company: 'Flynn Group of Companies',
                       role: 'Software Engineering Intern',
-                      period: 'May 2026 - Sept 2026',
+                      period: 'May 2026 - Dec 2026',
                       logo: '/logos/flynn.jpg',
                       skills: ['Angular', '.NET Core', 'SQL', 'AWS', 'Azure DevOps']
                     },
@@ -296,7 +296,7 @@ export default function Home() {
               <div className="space-y-12">
                 <ExperienceSection
                   title="Software Engineering Intern"
-                  subtitle="Flynn Group of Companies • May 2026 - Sept 2026"
+                  subtitle="Flynn Group of Companies • May 2026 - Dec 2026"
                   items={flynnItems}
                 />
 
