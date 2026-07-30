@@ -14,10 +14,10 @@ import ExperienceSection from '@/components/ui/ExperienceSection';
 import ExperienceTimeline from '@/components/ui/ExperienceTimeline';
 
 export default function Home() {
-  const carloItems = [
-  "Built Python and SQL data pipelines to automate user experience and feedback validation across cross-regional operations.",
-  "Engineered NLP workflows (NLTK, Pandas) to analyze 20,000+ customer records, enabling scalable sentiment analysis.",
-  "Collaborated across India & Italy in agile workflows, participating in standups and sprint planning to deliver data-driven insights."
+  const rbcItems = [
+  "Building automated SQL and Python reporting pipelines within the Decision Management team to support data-informed decision-making for RBC's Personal Banking division (16M+ customers).",
+  "Partnering with cross-functional teams across Risk, Marketing, and Product to translate business questions into data models, optimizing ETL/SQL workflows and reducing data processing time by ~25%.",
+  "Contributing to reporting and analytics initiatives influencing $500M+ in managed portfolio value, cutting manual reporting turnaround by ~35% across the Personal Banking analytics team."
 ];
 
   const flynnItems = [
@@ -78,15 +78,11 @@ export default function Home() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Moving to Toronto to start my SWE internship at Flynn, working on enterprise systems and scaling real-world applications.</span>
+                    <span>Working as a Data Analyst at RBC in Toronto, supporting Personal Banking analytics and reporting within the Decision Management team.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Scaling The Savify app with a team of five; refining features, optimizing backend performance, and preparing for the next funding phase.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Designing systems that learn, solving problems that hurt, and building toward what’s next under Project Kalson.</span>
+                    <span>Wrapping up Savify after running out of runway, and exploring what's next — including deeper work on Project Kalson, designing systems that learn and solving problems that actually hurt.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
@@ -266,9 +262,16 @@ export default function Home() {
                 <ExperienceTimeline
                   items={[
                     {
+                      company: 'Royal Bank of Canada',
+                      role: 'Data Analyst',
+                      period: 'Sept 2026 - Dec 2026',
+                      logo: '/logos/rbc.png',
+                      skills: ['SQL', 'Python', 'Power BI', 'ETL', 'Data Modeling']
+                    },
+                    {
                       company: 'Flynn Group of Companies',
                       role: 'Software Engineering Intern',
-                      period: 'May 2026 - Dec 2026',
+                      period: 'May 2026 - Sept 2026',
                       logo: '/logos/flynn.jpg',
                       skills: ['Angular', '.NET Core', 'SQL', 'AWS', 'Azure DevOps']
                     },
@@ -279,13 +282,6 @@ export default function Home() {
                       logo: '/logos/outlier.jpeg',
                       skills: ['AI', 'Prompt Engineering','LLM', 'Mathematical Reasoning', 'Fine-tuning']
                     },
-                    {
-                      company: 'Carlo Romano',
-                      role: 'Data Analyst Intern',
-                      period: 'June 2024 - Sept 2024',
-                      logo: '/logos/carloromano.png',
-                      skills: ['Python', 'SQL', 'NLP','Big Data', 'Matplotlib', 'Pandas']
-                    },
                   ]}
                 />
               </div>
@@ -295,8 +291,13 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Experiences</h3>
               <div className="space-y-12">
                 <ExperienceSection
-                  title="Software Engineering Intern"
-                  subtitle="Flynn Group of Companies • May 2026 - Dec 2026"
+                  title="Data Analyst"
+                  subtitle="Royal Bank of Canada • Sept 2026 - Dec 2026"
+                  items={rbcItems}
+                />
+                <ExperienceSection
+                  title="Software Engineering"
+                  subtitle="Flynn Group of Companies • May 2026 - Sept 2026"
                   items={flynnItems}
                 />
 
@@ -304,12 +305,6 @@ export default function Home() {
                   title="AI Engineer (LLM Systems)"
                   subtitle="Outlier AI • Sept 2024 - May 2025"
                   items={outlierItems}
-                />
-
-                <ExperienceSection
-                  title="Data Analyst Intern"
-                  subtitle="Carlo Romano • June 2024 - Sept 2024"
-                  items={carloItems}
                 />
               </div>
             </div>
