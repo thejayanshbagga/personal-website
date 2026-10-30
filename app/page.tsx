@@ -26,10 +26,10 @@ export default function Home() {
   "Embedded in a cross-functional Agile team of PMs, engineers, and business stakeholders, drove features through the full SDLC across the project lifecycle, contributing to a platform managing 500+ commercial construction projects across North America."
   ];
 
-  const outlierItems = [
-  "Engineered and optimized LLM-based systems using OpenAI APIs and Python, improving output accuracy by ~10–15% across production use cases.",
-  "Built evaluation pipelines with Python and Pandas, benchmarking performance across 1K–5K+ model outputs.",
-  "Scaled NLP workflows on 10K+ text records, supporting enterprise AI deployments and supervised learning tasks."
+  const wealthManagementItems = [
+  "Built an LLM-based AI assistant for client advisors serving ultra-high-net-worth clients, using retrieval over meeting notes and portfolio data to cut meeting-preparation time by 60% in a 40-advisor pilot.",
+  "Led a research sprint with advisors and data scientists on LLM summary accuracy, reviewing 300 meeting notes and creating a shared evaluation guide that cut advisor edit rates by 35%.",
+  "Improved a client churn classifier by engineering spending-trend features and tuning gradient boosting, raising top-decile precision from 0.48 to 0.66 and reducing false-positive outreach by 27%."
   ];
   return (
     <div className="min-h-screen bg-background">
@@ -78,7 +78,7 @@ export default function Home() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Working as a Data Analyst at RBC in Toronto, supporting Personal Banking analytics and reporting within the Decision Management team.</span>
+                    <span>Joining RBC Wealth Management in Toronto as an AI Engineer in January 2027, building AI tools for client advisors.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
@@ -262,6 +262,13 @@ export default function Home() {
                 <ExperienceTimeline
                   items={[
                     {
+                      company: 'Royal Bank of Canada (Wealth Management)',
+                      role: 'AI Engineer',
+                      period: 'Jan 2027 - Apr 2027',
+                      logo: '/logos/rbc.png',
+                      skills: ['Agentic AI', 'LLMs', 'Retrieval', 'Python', 'Machine Learning']
+                    },
+                    {
                       company: 'Royal Bank of Canada',
                       role: 'Data Analyst',
                       period: 'Sept 2026 - Dec 2026',
@@ -275,13 +282,6 @@ export default function Home() {
                       logo: '/logos/flynn.jpg',
                       skills: ['Angular', '.NET Core', 'SQL', 'AWS', 'Azure DevOps']
                     },
-                    {
-                      company: 'Outlier AI',
-                      role: 'AI Engineer',
-                      period: 'Sept 2024 - May 2025',
-                      logo: '/logos/outlier.jpeg',
-                      skills: ['AI', 'Prompt Engineering','LLM', 'Mathematical Reasoning', 'Fine-tuning']
-                    },
                   ]}
                 />
               </div>
@@ -291,6 +291,11 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Experiences</h3>
               <div className="space-y-12">
                 <ExperienceSection
+                  title="AI Engineer"
+                  subtitle="Royal Bank of Canada (Wealth Management) • Jan 2027 - Apr 2027"
+                  items={wealthManagementItems}
+                />
+                <ExperienceSection
                   title="Data Analyst"
                   subtitle="Royal Bank of Canada • Sept 2026 - Dec 2026"
                   items={rbcItems}
@@ -299,12 +304,6 @@ export default function Home() {
                   title="Software Engineering"
                   subtitle="Flynn Group of Companies • May 2026 - Sept 2026"
                   items={flynnItems}
-                />
-
-                <ExperienceSection
-                  title="AI Engineer (LLM Systems)"
-                  subtitle="Outlier AI • Sept 2024 - May 2025"
-                  items={outlierItems}
                 />
               </div>
             </div>
