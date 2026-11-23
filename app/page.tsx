@@ -69,7 +69,8 @@ export default function Home() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tight">About Me</h2>
               <p className="text-lg text-muted-foreground">
-                I’m a Computer Science student at Western University, building at the intersection of software, AI, and finance. I’ve been working on real-world systems—from LLM-based infrastructure to scalable backend applications. I’m especially interested in building products that are not just technically strong, but genuinely useful.    </p>
+                I’m a Computer Science student at Western University, working at the intersection of AI, consulting, and finance. I’ve worked on real-world systems, from data pipelines in banking to AI tools for client advisors, and I’m especially interested in using data and analysis to help businesses make better decisions.
+              </p>
               <p className="text-lg text-muted-foreground">
                 When I’m not coding, I’m usually expanding my vocabulary, picking up new languages, sampling colognes and cognac, or just touching grass to balance it all out.
               </p>
