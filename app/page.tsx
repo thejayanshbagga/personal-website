@@ -42,8 +42,9 @@ export default function Home() {
               <span className="block text-primary">Hey, I'm Jayansh Bagga.</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mb-8">
-              I’m a Computer Science student at Western and Founder & Technical Lead of Savify, a privately-backed fintech startup. I build scalable systems across software, AI, and finance from LLM infrastructure to backend applications. 
-              I also believe that computer science students can take a cue from the finance world, sharp code deserves a sharp suit.
+              I’m a Computer Science student at Western University and Founder & Technical Lead at Savify, a privately backed fintech startup. Having worked with some of Canada’s largest banks in data analytics and AI engineering, I’ve built AI agents and transformed complex data into actionable insights. I’m now transitioning toward management consulting at leading firms like Oliver Wyman, working at the intersection of quantitative finance, data, and technology.
+              <br /><br />
+              I believe CS students can take a cue from finance: sharp code deserves a sharp suit.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="#projects">
@@ -79,15 +80,19 @@ export default function Home() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Joining RBC Wealth Management in Toronto as an AI Engineer in January 2027, building AI tools for client advisors.</span>
+                    <span>Starting as an AI Engineer at RBC Wealth Management in Toronto in January 2027, building AI tools for client advisors.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Wrapping up Savify after running out of runway, and exploring what's next — including deeper work on Project Kalson, designing systems that learn and solving problems that actually hurt.</span>
+                    <span>Joining Oliver Wyman’s Data &amp; Analytics practice as a summer analyst in June 2027, moving into consulting.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
-                    <span>Developing my personal brand and investment portfolio while pursuing bigger professional opportunities.</span>
+                    <span>Exploring the next step after Savify, including deeper work on Project Kalson, designing systems that learn and solving problems that actually hurt.</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="rounded-full h-2 w-2 mt-2.5 bg-primary"></span>
+                    <span>Building my personal brand while pursuing bigger professional opportunities.</span>
                   </li>
                 </ul>
               </div>
