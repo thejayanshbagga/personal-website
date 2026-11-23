@@ -198,7 +198,7 @@ export default function Home() {
         <section id="resume" className="py-16 border-t">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
             <h2 className="text-3xl font-bold tracking-tight">Resume</h2>
-            <Link href="/resume-jayanshbagga.pdf" target="_blank">
+            <Link href="/resume.pdf" target="_blank">
               <Button>
                 <FileText className="mr-2 h-4 w-4" />
                 Download Resume
