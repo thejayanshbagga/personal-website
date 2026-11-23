@@ -14,22 +14,23 @@ import ExperienceSection from '@/components/ui/ExperienceSection';
 import ExperienceTimeline from '@/components/ui/ExperienceTimeline';
 
 export default function Home() {
-  const rbcItems = [
-  "Building automated SQL and Python reporting pipelines within the Decision Management team to support data-informed decision-making for RBC's Personal Banking division (16M+ customers).",
-  "Partnering with cross-functional teams across Risk, Marketing, and Product to translate business questions into data models, optimizing ETL/SQL workflows and reducing data processing time by ~25%.",
-  "Contributing to reporting and analytics initiatives influencing $500M+ in managed portfolio value, cutting manual reporting turnaround by ~35% across the Personal Banking analytics team."
-];
+  const oliverWymanItems = [
+    "Incoming Analyst, Data & Analytics (DNA) practice at Oliver Wyman, a Marsh McLennan business ($24B+ revenue), joining a global team of quantitative specialists to apply advanced analytics and modelling to client business problems across industries, from strategy through implementation.",
+  ];
 
   const flynnItems = [
-  "Tasked with modernizing a customer-facing platform tracking $100M+ in construction projects, built and shipped 25+ Angular/TypeScript features end-to-end from UI to backend integration, improving workflow efficiency and user experience for daily project-management users.",
-  "To eliminate slow, error-prone manual approvals across enterprise systems, designed and deployed REST API endpoints in .NET Core and SQL that automated multi-stage approval workflows, cutting processing time 30% and removing manual data-entry errors.",
-  "Embedded in a cross-functional Agile team of PMs, engineers, and business stakeholders, drove features through the full SDLC across the project lifecycle, contributing to a platform managing 500+ commercial construction projects across North America."
+    "Tasked with modernizing a customer-facing platform tracking $100M+ in construction projects, built and shipped 25+ Angular/TypeScript features end-to-end from UI to backend integration, improving workflow efficiency and user experience for daily project-management users.",
+    "Built REST API endpoints in .NET Core and SQL that automated multi-stage approval workflows across a platform managing 500+ commercial construction projects, cutting processing time 30% and removing manual data-entry errors.",
   ];
 
   const wealthManagementItems = [
-  "Built an LLM-based AI assistant for client advisors serving ultra-high-net-worth clients, using retrieval over meeting notes and portfolio data to cut meeting-preparation time by 60% in a 40-advisor pilot.",
-  "Led a research sprint with advisors and data scientists on LLM summary accuracy, reviewing 300 meeting notes and creating a shared evaluation guide that cut advisor edit rates by 35%.",
-  "Improved a client churn classifier by engineering spending-trend features and tuning gradient boosting, raising top-decile precision from 0.48 to 0.66 and reducing false-positive outreach by 27%."
+    "Building an LLM-based AI assistant for client advisors serving ultra high net worth clients, using retrieval over meeting notes and portfolio data; cut advisor meeting-prep time by 60% across a pilot of 40 advisors.",
+    "Optimizing a client churn classifier by engineering spending-trend features and tuning gradient boosting, raising precision at the top decile from 0.48 to 0.66 and cutting false-positive outreach by 27% and focusing high-value client retention efforts.",
+  ];
+
+  const personalBankingItems = [
+    "Drove data-informed decision-making for RBC's Personal Banking division (16M+ customers) by building automated SQL/Python reporting pipelines within the Decision Management team, cutting manual reporting turnaround by ~35%",
+    "Partnered with cross-functional teams across Risk, Marketing, and Product to translate business questions into data models and optimize ETL/SQL workflows, reducing data processing time by ~25% and supporting initiatives influencing $500M+ in managed portfolio value.",
   ];
   return (
     <div className="min-h-screen bg-background">
@@ -222,39 +223,38 @@ export default function Home() {
 
               <div>
                 <h3 className="text-xl font-bold mb-4">Skills</h3>
-                <div className="flex flex-wrap gap-2">
-                  <Badge>Python</Badge>
-                  <Badge>Java</Badge>
-                  <Badge>C++</Badge>
-                  <Badge>SQL</Badge>
-                  <Badge>TypeScript</Badge>
-
-                  <Badge>Angular</Badge>
-                  <Badge>.NET Core</Badge>
-                  <Badge>Node.js</Badge>
-                  <Badge>FastAPI</Badge>
-                  <Badge>React Native</Badge>
-
-                  <Badge>MongoDB</Badge>
-                  <Badge>PostgreSQL</Badge>
-                  <Badge>Redis</Badge>
-
-                  <Badge>AWS</Badge>
-                  <Badge>Docker</Badge>
-                  <Badge>Kubernetes</Badge>
-
-                  <Badge>REST APIs</Badge>
-                  <Badge>System Design</Badge>
-                  <Badge>Multithreading</Badge>
-
-                  <Badge>LLMs</Badge>
-                  <Badge>NLP</Badge>
-                  <Badge>Pandas</Badge>
-                  <Badge>XGBoost</Badge>
-
-                  <Badge>Algorithmic Trading</Badge>
-                  <Badge>Time Series</Badge>
-                  <Badge>Risk Modeling</Badge>
+                <div className="space-y-4">
+                  {[
+                    {
+                      category: 'Languages',
+                      skills: ['Java', 'Python', 'C', 'C++', 'SQL', 'JavaScript', 'TypeScript', 'Bash', 'Go', 'Rust', 'R', 'SAS'],
+                    },
+                    {
+                      category: 'Frameworks',
+                      skills: ['Angular', '.NET Core', 'Node.js', 'Express.js', 'FastAPI', 'React Native', 'Next.js', 'Tailwind CSS', 'Spring Boot', 'Django', 'Flask', 'NestJS', 'scikit-learn'],
+                    },
+                    {
+                      category: 'Databases',
+                      skills: ['MongoDB', 'PostgreSQL', 'Supabase', 'Redis', 'MySQL', 'SQLite', 'DynamoDB', 'Snowflake'],
+                    },
+                    {
+                      category: 'Tools',
+                      skills: ['AWS', 'Azure DevOps', 'Docker', 'Kubernetes', 'Git', 'Linux', 'REST APIs', 'GraphQL', 'Postman', 'CI/CD', 'Jenkins', 'Terraform', 'Nginx', 'Excel'],
+                    },
+                    {
+                      category: 'Concepts',
+                      skills: ['DSA', 'OOP', 'System Design', 'NLP', 'Pandas', 'NumPy', 'Time Series Analysis', 'Data Modelling', 'Algorithmic Trading', 'Risk Modeling', 'Logistic Regression'],
+                    },
+                  ].map(({ category, skills }) => (
+                    <div key={category}>
+                      <h4 className="mb-2 text-sm font-medium text-muted-foreground">{category}</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {skills.map((skill) => (
+                          <Badge key={skill}>{skill}</Badge>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
 
@@ -262,25 +262,32 @@ export default function Home() {
                 <ExperienceTimeline
                   items={[
                     {
+                      company: 'Oliver Wyman',
+                      role: 'Incoming Summer Analyst',
+                      period: 'June - August 2027',
+                      logo: '/logos/oliver.jpeg',
+                      skills: ['Data & Analytics', 'Advanced Analytics', 'Data Modelling', 'Python', 'Machine Learning']
+                    },
+                    {
                       company: 'Royal Bank of Canada (Wealth Management)',
                       role: 'AI Engineer',
                       period: 'Jan 2027 - Apr 2027',
                       logo: '/logos/rbc.png',
-                      skills: ['Agentic AI', 'LLMs', 'Retrieval', 'Python', 'Machine Learning']
+                      skills: ['LLMs', 'Retrieval', 'Python', 'Machine Learning']
                     },
                     {
-                      company: 'Royal Bank of Canada',
+                      company: 'Royal Bank of Canada (Personal Banking)',
                       role: 'Data Analyst',
                       period: 'Sept 2026 - Dec 2026',
                       logo: '/logos/rbc.png',
-                      skills: ['SQL', 'Python', 'Power BI', 'ETL', 'Data Modeling']
+                      skills: ['SQL', 'Python', 'ETL', 'Data Modelling']
                     },
                     {
                       company: 'Flynn Group of Companies',
-                      role: 'Software Engineering Intern',
+                      role: 'Software Engineer',
                       period: 'May 2026 - Sept 2026',
                       logo: '/logos/flynn.jpg',
-                      skills: ['Angular', '.NET Core', 'SQL', 'AWS', 'Azure DevOps']
+                      skills: ['Angular', 'TypeScript', '.NET Core', 'SQL', 'REST APIs']
                     },
                   ]}
                 />
@@ -291,17 +298,22 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-4">Experiences</h3>
               <div className="space-y-12">
                 <ExperienceSection
+                  title="Incoming Summer Analyst"
+                  subtitle="Oliver Wyman • June - August 2027"
+                  items={oliverWymanItems}
+                />
+                <ExperienceSection
                   title="AI Engineer"
                   subtitle="Royal Bank of Canada (Wealth Management) • Jan 2027 - Apr 2027"
                   items={wealthManagementItems}
                 />
                 <ExperienceSection
                   title="Data Analyst"
-                  subtitle="Royal Bank of Canada • Sept 2026 - Dec 2026"
-                  items={rbcItems}
+                  subtitle="Royal Bank of Canada (Personal Banking) • Sept 2026 - Dec 2026"
+                  items={personalBankingItems}
                 />
                 <ExperienceSection
-                  title="Software Engineering"
+                  title="Software Engineer"
                   subtitle="Flynn Group of Companies • May 2026 - Sept 2026"
                   items={flynnItems}
                 />
